@@ -23,7 +23,9 @@
 > Managing state in React 
 >
 > Handling user events in React
->
+> 
+> Understanding React js Props. What is "Props"?
+> 
 > What is State
 >
 
@@ -47,16 +49,26 @@
 
 > **Features of React**
 >
+> JSX(JavaScript Syntax Extension):
+> 
+> Virtual DOM:
+> 
+> One-way Data Binding:
+> 
+> Performance:
+> 
+> Extension:
+> 
+> Conditional Statements:
+> 
+> Components:
+> 
+> Simplicity:
 > 
 
+
+
 3
-
-
-
-
-
-
-
 
 > **How** **to** **install** **React**
 >
@@ -92,21 +104,57 @@
 > remove it from your system. This is great because you will never have
 > an
 
-7
+
+
+
+4
+
+> **React** **Components**
+>
+> components are independent and reusable bits of code.
+>
+> Componenets are Javascript files.
+>
+> They Serve the some purpose as Javascript functions.
+>
+> But works in isolation and returns HTML via a render function.
+>
+
+
+
+
+
+5
+
 > **Advantages of React**
 > 
 The advantages of React JS are :
 
 > It is composable.
+> 
 > It is declarative.
+> 
 > Write once, and learn anywhere.
+> 
 > It is simple.
+> 
 > SEO friendly.
+> 
 > Fast, efficient, and easy to learn.
+> 
 > It guarantees stable code.
+> 
 > It is backed by a strong community.
+> 
 
-8
+
+
+
+6
+
+> **How** **React** **Works**
+>
+> 
 
 <img src="./yjbifgkc.png"
 style="width:4.53376in;height:5.09657in" />
