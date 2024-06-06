@@ -165,25 +165,26 @@ style="width:4.53376in;height:5.09657in" />
 ||
 ||
 
-> a [Git](https://flaviocopes.com/git/) repository.
+
+7
+
+**Introductions** **to** **JSX**
+
+
+> JSX stands for JavaScript XML. JSX is basically a syntax extension of JavaScript.
+
+> React JSX helps us to write HTML in JavaScript and forms the basis of React Development.
 >
-> It also added a few commands in the package.json file:
->
-> so you can immediately start the app by going into the newly created
-> application folder and run npm start .
+> Using JSX is not compulsory but it is highly recommended for programming in React as it makes the  >development process easier as the code becomes easy to write and read.
 
-9
 
-<img src="./vt5adbgg.png"
-style="width:4.53376in;height:2.6473in" /><img src="./bhwpk5jf.png"
-style="width:4.53376in;height:4.75263in" />
 
-> By default this command launches the app on your local port 3000, and
-> it opens your browser showing you the welcome screen:
->
-> Now you're ready to work on this application!
 
-10
+
+
+
+
+8
 
 > **React** **Components**
 >
