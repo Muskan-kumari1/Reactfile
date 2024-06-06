@@ -1,485 +1,214 @@
-**React js**
+# React js
 
-> **Table** **of** **Content**
->
-> Introduction to React
->
-> Features of React
->
-> How to install React
->
-> React Components
-> 
-> What are the advantages of React
-> 
-> How React Works
->
-> Introduction to JSX
-> 
-> The difference between JSX and HTML
->
-> Embedding JavaScript in JSX
->
-> Managing state in React 
->
-> Handling user events in React
-> 
-> Understanding React js Props. What is "Props"?
-> 
-> What is State
->
+![image](https://media.dev.to/cdn-cgi/image/width=750,height=700,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png)
 
 
+### Table of Content
+
+1. Introduction to React
+
+2. Features of React
+
+3. How to install React
+
+4. React Components
+
+5. What are the advantages of React
+ 
+6. How React Works
+
+7. Introduction to JSX
+
+8. The difference between JSX and HTML
+
+9. Embedding JavaScript in JSX
+
+10. Managing state in React 
+
+11. Handling user events in React
+
+12. Understanding React js Props. What is "Props"?
 
 
-1
+## 1. Introduction to React
 
-> **Introduction** **to** **React**
->
-> React(also known as React.js or React js)is a free and open-source front-end Javascript library for building user interfaces based on components.
-> 
-> it is maintained by Meta(for mely Facebook)and a community of individual developers and companies.
->
-> React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
-> 
+ * React(also known as React.js or React js)is a free and open-source front-end Javascript library for building user interfaces based on components.
+ 
+ * it is maintained by Meta(for mely Facebook)and a community of individual developers and companies.
 
+ * React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
+ 
 
+## 2.Features of React
 
-2
-
-> **Features of React**
->
-> JSX(JavaScript Syntax Extension):
-> 
-> Virtual DOM:
-> 
-> One-way Data Binding:
-> 
-> Performance:
-> 
-> Extension:
-> 
-> Conditional Statements:
-> 
-> Components:
-> 
-> Simplicity:
-> 
+ JSX(JavaScript Syntax Extension):
+ 
+ Virtual DOM:
+ 
+ One-way Data Binding:
+ 
+ Performance:
+ 
+ Extension:
+ 
+ Conditional Statements:
+ 
+ Components:
+ 
+ Simplicity: 
 
 
-
-3
-
-> **How** **to** **install** **React**
->
+## 3. How to install React
 > There are a few different ways to install React.
->
 > To start with, I highly recommend one approach, and that's using the
 > officially recommended tool called
->
+
 > create-react-app .
->
+
 > create-react-app is a command line application, aimed at getting you
 > up to speed with React in no time.
->
+
 > You start by using npx , which is an easy way to download and execute
 > Node.js commands without installing them.
->
+
 > See my npx guide here: <https://flaviocopes.com/npx/>
->
+
 > npx comes with npm (since version 5.2) and if you don't have npm
 > installed already, do it now from
 > [https://nodejs.org](https://nodejs.org/) (npm is installed with
 > Node).
->
+
 > If you are unsure which version of npm you have, run npm -v to check
 > if you need to update.
 >
 > Tip: check out my OSX terminal tutorial at
 > <https://flaviocopes.com/macos-terminal/> if you're unfamiliar with
 > using the terminal, applies to Mac and Linux.
->
+
 > When you run npx create-react-app \<app-name\> , npx is going to
 > *download* the most recent create-react-app release, run it, and then
 > remove it from your system. This is great because you will never have
 > an
 
+## 4. React Components
 
-
-
-4
-
-> **React** **Components**
->
 > components are independent and reusable bits of code.
->
+
 > Componenets are Javascript files.
->
 > They Serve the some purpose as Javascript functions.
 >
 > But works in isolation and returns HTML via a render function.
->
+
+ ```bash
+<img src="./gampczne.png"
+ style="width:4.58587in;height:0.20845in" />import React from 'react'
+ import logo from './logo.svg' import './App.css'
+
+ function App() { return (
+
+ \<div className="App"\>
+
+ \<header className="App-header"\>
+
+ \<img src={logo} className="App-logo" alt="lo \<p\>
+
+ Edit \<code\>src/App.js\</code\> and save to r \</p\>
+
+ \<a
+
+ className="App-link" href="https://reactjs.org" target="\_blank"
+rel="noopener noreferrer"
+
+ \>
+ Learn React \</a\>
+ 
+ \</header\> \</div\>
+
+ ) }
+export default App
+```
 
 
+## 5. Advantages of React
+
+* The advantages of React JS are :
+
+*  It is composable.
+ 
+*  t is declarative.
+ 
+* Write once, and learn anywhere.
+ 
+* It is simple.
+ 
+* SEO friendly.
+ 
+* Fast, efficient, and easy to learn.
+ 
+* It guarantees stable code.
+ 
+* It is backed by a strong community.
+
+## 6. How React Works
+* `Component-Based Architecture:` React structures applications using components. These are self-contained, reusable pieces of UI that can be nested, managed, and handled independently. Each component can have its own state and lifecycle.
+* `JSX Syntax:` React uses JSX, a syntax extension for JavaScript, which allows developers to write HTML-like code within JavaScript. This makes the code more readable and easier to write.
+* `Virtual DOM:` React maintains a virtual representation of the DOM in memory. When the state of a component changes, React updates the virtual DOM first. It then compares this virtual DOM with the actual DOM and determines the most efficient way to update the actual DOM to match the virtual one. This process is called reconciliation.
+* `State and Props:` Components in React can hold their own state, which is used to manage data that changes over time. Props (short for properties) are used to pass data from parent components to child components. This unidirectional data flow ensures predictable data management.
+* `Lifecycle Methods:` React components have a lifecycle, and developers can hook into different stages of this lifecycle using methods like componentDidMount, componentDidUpdate, and componentWillUnmount. These methods provide opportunities to execute code at specific points in a component's life.
+* `Hooks:` Introduced in React 16.8, hooks allow developers to use state and other React features in functional components. Common hooks include useState for managing state and useEffect for handling side effects.
+* React Router: For building single-page applications, React Router is often used to manage navigation and rendering of different components based on the URL.
 
 
-
-5
-
-> **Advantages of React**
-> 
-The advantages of React JS are :
-
-> It is composable.
-> 
-> It is declarative.
-> 
-> Write once, and learn anywhere.
-> 
-> It is simple.
-> 
-> SEO friendly.
-> 
-> Fast, efficient, and easy to learn.
-> 
-> It guarantees stable code.
-> 
-> It is backed by a strong community.
-> 
-
-
-
-
-6
-
-> **How** **React** **Works**
->
-> 
-
-<img src="./yjbifgkc.png"
-style="width:4.53376in;height:5.09657in" />
-
-||
-||
-||
-||
-||
-
-
-7
-
-**Introductions** **to** **JSX**
+## 7. Introductions to JSX
 
 
 > JSX stands for JavaScript XML. JSX is basically a syntax extension of JavaScript.
-
+> 
 > React JSX helps us to write HTML in JavaScript and forms the basis of React Development.
->
+> 
 > Using JSX is not compulsory but it is highly recommended for programming in React as it makes the  >development process easier as the code becomes easy to write and read.
 
+**We can't talk about React without first explaining JSX.
+ You met your first React component, the App component defined in the
+default application built by  `create-react-app.`
 
+ **Its code was this:**
+```bash
+ <img src="./kvqmfprv.png"
+ style="width:4.58587in;height:0.20845in" />import React from 'react'
+ import logo from './logo.svg' import './App.css'
 
+ function App() { return (
 
+ \<div className="App"\>
 
+ \<header className="App-header"\>
 
+ \<img src={logo} className="App-logo" alt="lo \<p\>
 
+ Edit \<code\>src/App.js\</code\> and save to r \</p\>
 
-8
+ \<a
 
-> **React** **Components**
->
-> You just saw how to create your first React application.
->
-> This application comes with a series of files that do various things,
-> mostly related to configuration, but there's one file that stands out:
-> App.js .
->
-> App.js is the **first** **React** **Component** you meet.
->
-> Its code is this:
->
-> <img src="./gampczne.png"
-> style="width:4.58587in;height:0.20845in" />import React from 'react'
-> import logo from './logo.svg' import './App.css'
->
-> function App() { return (
->
-> \<div className="App"\>
->
-> \<header className="App-header"\>
->
-> \<img src={logo} className="App-logo" alt="lo \<p\>
->
-> Edit \<code\>src/App.js\</code\> and save to r \</p\>
->
-> \<a
->
-> className="App-link" href="https://reactjs.org" target="\_blank"
-> rel="noopener noreferrer"
->
-> \>
->
-> Learn React \</a\>
->
-> \</header\> \</div\>
->
-> ) }
->
-> export default App
+ className="App-link" href="https://reactjs.org" target="\_blank"
+ rel="noopener noreferrer"
 
-11
+ \>
 
-> An application built using React, or one of the other popular frontend
-> frameworks like Vue and Svelte for example, is built using dozens of
-> components.
->
-> But let's start by analyzing this first component. I'm going to
-> simplify this component code like this:
->
-> import React from 'react' import logo from './logo.svg' import
-> './App.css'
->
-> function App() {
->
-> return /\* something \*/ }
->
-> export default App
->
-> You can see a few things here. We *import* some things, and we
-> *export* a function called App .
->
-> The things we import in this case are a JavaScript library (the react
-> npm package), an SVG image, and a CSS file.
->
-> create-react-app is set up in a way that allows us to import images
-> and CSS to use in our JavaScript, but this is not something you need
-> to care now. What you need to care about is the concept of a
-> **component**
->
-> App is a function that in the original example returns something that
-> at first sight looks quite strange.
->
-> It looks like **HTML** but it has some JavaScript embedded into it.
+ Learn React \</a\>
 
-12
+ \</header\>
 
-> That is **JSX**, a special language we use to build a component's
-> output. We'll talk more about JSX in the next section.
->
-> In addition to defining some JSX to return, a component has several
-> other characteristics.
->
-> A component can have its own **state**, which means it encapsulates
-> some variables that other components can't access unless this
-> component exposes this state to the rest of the application.
->
-> A component can also receive data from other components. In this case
-> we talk about **props**.
->
-> Don't worry, we're going to look in details at all those terms (JSX,
-> State and Props) soon.
+ \</div\> )
 
-13
+ }
 
-> **Introduction** **to** **JSX**
->
-> We can't talk about React without first explaining JSX.
->
-> You met your first React component, the App component defined in the
-> default application built by
->
-> create-react-app .
->
-> Its code was this:
->
-> <img src="./kvqmfprv.png"
-> style="width:4.58587in;height:0.20845in" />import React from 'react'
-> import logo from './logo.svg' import './App.css'
->
-> function App() { return (
->
-> \<div className="App"\>
->
-> \<header className="App-header"\>
->
-> \<img src={logo} className="App-logo" alt="lo \<p\>
->
-> Edit \<code\>src/App.js\</code\> and save to r \</p\>
->
-> \<a
->
-> className="App-link" href="https://reactjs.org" target="\_blank"
-> rel="noopener noreferrer"
->
-> \>
->
-> Learn React \</a\>
->
-> \</header\>
->
-> \</div\> )
->
-> }
->
-> export default App
+ export default App
+ ```
 
-14
+## 8. The difference between JSX and HTML
 
-> We previously ignored everything that was inside the
-
-||
-||
-||
-
-> talk about it.
->
-> We call JSX everything inside wrapped inside the parentheses returned
-> by the component:
->
-> <img src="./bct1kpvg.png"
-> style="width:4.58587in;height:0.20845in" />\<div className="App"\>
->
-> \<header className="App-header"\>
->
-> \<img src={logo} className="App-logo" alt="logo" \<p\>
->
-> Edit \<code\>src/App.js\</code\> and save to reloa \</p\>
->
-> \<a
->
-> className="App-link" href="https://reactjs.org" target="\_blank"
-> rel="noopener noreferrer"
->
-> \>
->
-> Learn React \</a\>
->
-> \</header\> \</div\>
->
-> This *looks* like HTML, but it's not really HTML. It's a little
-> different.
->
-> And it's a bit strange to have this code inside a JavaScript file.
-> This does not look like JavaScript at all!
->
-> Under the hood, React will process the JSX and it will transform it
-> into JavaScript that the browser will be able to interpret.
->
-> So we're writing JSX, but in the end there's a translation step that
-> makes it digestible to a JavaScript interpreter.
-
-15
-
-> React gives us this interface for one reason: **it's** **easier**
-> **to** **build** **UI** **interfaces** **using** **JSX**.
->
-> Once you'll get more familiar with it, of course.
->
-> In the next section we'll talk about how JSX lets you easily compose a
-> UI, then we'll look at the differences with "normal HTML" that you
-> need to know.
-
-16
-
-> **Using** **JSX** **to** **compose** **UI**
->
-> As introduced in the last section, one of the main benefits of JSX is
-> to make it very easy to build a UI.
->
-> In particular, in a React component you can import other React
-> components, and you can embed them and display them.
->
-> A React component is usually created in its own file, because that's
-> how we can easily reuse it (by importing it) in other components.
->
-> But a React component can also be created in the same file of another
-> component, if you plan to only use it in that component. There's no
-> "rule" here, you can do what feels best to you.
->
-> I generally use separate files when the number of lines in a file
-> grows too much.
->
-> To keep things simple let's create a component in the same App.js
-> file.
->
-> We're going to create a WelcomeMessage component:
->
-> function WelcomeMessage() { return \<p\>Welcome!\</p\>
->
-> }
->
-> See? It's a simple function that returns a line of JSX that represents
-> a p HTML element.
->
-> We're going to add it to the App.js file.
-
-17
-
-||
-||
-||
-||
-||
-
-> user interface:
->
-> <img src="./wuhdnkad.png"
-> style="width:4.58587in;height:0.20845in" />import React from 'react'
-> import logo from './logo.svg' import './App.css'
->
-> function WelcomeMessage() { return \<p\>Welcome!\</p\>
->
-> }
->
-> function App() { return (
->
-> \<div className="App"\>
->
-> \<header className="App-header"\>
->
-> \<img src={logo} className="App-logo" alt="lo \<p\>
->
-> Edit \<code\>src/App.js\</code\> and save to r \</p\>
->
-> \<WelcomeMessage /\> \<a
->
-> className="App-link" href="https://reactjs.org" target="\_blank"
-> rel="noopener noreferrer"
->
-> \>
->
-> Learn React \</a\>
->
-> \</header\> \</div\>
->
-> ) }
->
-> export default App
->
-> And here's the result. Can you see the "Welcome!" message in the
-> screen?
-
-18
-
-<img src="./cngllfo1.png"
-style="width:4.53376in;height:3.56448in" />
-
-> We say WelcomeMessage is a **child** **component** of App, and App is
-> its parent componnet.
->
-> We're adding the \<WelcomeMessage /\> component like if it was part of
-> the HTML language.
->
-> That's the beauty of React components and JSX: we can compose an
-> application interface and use it like we're writing HTML.
->
-> With some differences, as we'll see in the next section.
-
-19
-
-> **The** **difference** **between** **JSX** **and** **HTML**
->
-> JSX kind of looks like HTML, but it's not.
+ JSX kind of looks like HTML, but it's not.
 >
 > In this section I want to introduce you some of the most important
 > things you need to keep in mind when using JSX.
@@ -504,44 +233,25 @@ style="width:4.53376in;height:3.56448in" />
 > You need to remember this especially when you're copy/pasting some
 > existing HTML.
 
-20
 
-<img src="./wdxmrbpw.png"
-style="width:4.53376in;height:0.91718in" />
+> That is **JSX**, a special language we use to build a component's
+> output. We'll talk more about JSX in the next section.
+>
+> In addition to defining some JSX to return, a component has several
+> other characteristics.
+>
+> A component can have its own **state**, which means it encapsulates
+> some variables that other components can't access unless this
+> component exposes this state to the rest of the application.
+>
+> A component can also receive data from other components. In this case
+> we talk about **props**.
+>
+> Don't worry, we're going to look in details at all those terms (JSX,
+> State and Props) soon.
 
-> React will try its best to make sure things don't break, but it will
-> raise you a lot of warnings in the Developer Tools:
->
-> This is not the only HTML feature that suffers from this problem, but
-> it's the most common one.
->
-> Another big difference between JSX and HTML is that HTML is very
-> *relaxed*, we can say. Even if you have an error in the syntax, or you
-> close the wrong tag, or you have a mismatch, the browser will try its
-> best to interpret the HTML without breaking.
->
-> It's one of the core features of the Web. It is very forgiving.
->
-> JSX is not forgiving. If you forget to close a tag, you will have a
-> clear error message:
+## 9. Embedding JavaScript in JSX
 
-21
-
-<img src="./0kjvriks.png"
-style="width:4.53376in;height:4.6901in" />
-
-> React usually gives very good and informative error messages that
-> point you in the right direction to fix the problem.
->
-> Another big difference between JSX and HTML is that in JSX we can
-> embed JavaScript.
->
-> Let's talk about this in the next section.
-
-22
-
-> **Embedding** **JavaScript** **in** **JSX**
->
 > One of the best features of React is that we can easily embed
 > JavaScript into JSX.
 >
@@ -573,386 +283,204 @@ style="width:4.53376in;height:4.6901in" />
 >
 > }
 
-23
+## 10. Managing state in React 
 
-> We can print this value in the JSX by adding
+* Component State: State is a built-in React object used to hold data that can change over time. Each class component can have its own state, initialized in the constructor, and updated using this.setState(). Functional components use the useState hook to handle state.
 
-||
-||
-||
+* useState Hook: For functional components, the useState hook is used to declare state variables. It returns an array with two elements: the current state value and a function to update it. This hook allows functional components to have state and manage it.
 
-> Inside the curly brackets { } we can add any JavaScript statement, but
-> *just* *one* statement for every curly bracket block.
->
-> And the statement must return something.
->
-> For example this is a common statement you will find in JSX. We have a
-> ternary operator where we define a condition ( message === 'Hello!' ),
-> and we print one value if the condition is true, or another value (the
-> content of message in this case) if the condition is false:
->
-> <img src="./ykfnttkb.png"
-> style="width:4.58587in;height:0.20845in" />{
->
-> message === 'Hello!' ? 'The message was "Hello!"' }
+* Props for State Passing: State can be passed from parent to child components via props. This enables child components to access and display state data from their parents, promoting a unidirectional data flow.
 
-24
+* State Libraries: For larger applications, state management libraries like Redux, MobX, or Zustand are used. These libraries provide a more structured and scalable approach to handling state across an entire application, offering features like centralized state, middleware, and time-travel debugging.
 
-> **Managing** **state** **in** **React**
->
-> Every React component can have its own **state**.
->
-> What do we mean by *state*? The state is the **set** **of** **data**
-> **that** **is** **managed** **by** **the** **component**.
->
-> Think about a form, for example. Each individual input element of the
-> form is responsible for managing its state: what is written inside it.
->
-> A button is responsible for knowing if it's being clicked, or not. If
-> it's on focus.
->
-> A link is responsible for knowing if the mouse is hovering it.
->
-> In React, or in any other components-based framework/library, all our
-> applications are based and make heavy use of components state.
->
-> We manage state using the useState utility provided by React. It's
-> technically a **hook** (you don't need to know the details of hooks
-> right now, but that's what it is).
->
-> You import useState from React in this way:
->
-> import React, { useState } from 'react'
->
-> Calling useState() , you will get back a new state variable, an a
-> function that we can call to alter its value.
+```bash
+import React, { Component } from 'react';
 
-25
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
 
-||
-||
-||
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
-> and returns an array containing the state variable, and the function
-> you call to alter the state.
->
-> Example:
->
-> const \[count, setCount\] = useState(0)
->
-> This is important. We can't just alter the value of a state variable
-> directly. We must call its modifier function. Otherwise the React
-> component will not update its UI to reflect the changes of the data.
-> Calling the modifier is the way we can tell React that the component
-> state has changed.
->
-> The syntax is a bit weird, right? Since useState() returns an array we
-> use array destructuring to access each individual item, like this:
-> const \[count, setCount\] = useState(0)
->
-> Here's a practical example:
->
-> <img src="./vy4wr1p5.png"
-> style="width:4.58587in;height:0.20845in" />import { useState } from
-> 'react'
->
-> const Counter = () =\> {
->
-> const \[count, setCount\] = useState(0)
->
-> return ( \<div\>
->
-> \<p\>You clicked {count} times\</p\>
->
-> \<button onClick={() =\> setCount(count + 1)}\>Cl \</div\>
->
-> ) }
->
-> ReactDOM.render(\<Counter /\>, document.getElementById
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
 
-26
+export default Counter;
+```
 
-||
-||
-||
+## 11. Handling user events in React
 
-> create as many state variables as you want:
->
-> <img src="./ly5p4dno.png"
-> style="width:4.58587in;height:0.20845in" />const \[count, setCount\] =
-> useState(0)
->
-> const \[anotherCounter, setAnotherCounter\] = useState
+**Handling user events in React involves setting up event handlers that respond to user actions like clicks, keyboard input, or form submissions. Here’s a brief description of how to manage user events in React:**
 
-27
+* Event Handlers: React uses camelCase for event handler properties, such as onClick, onChange, onSubmit, etc. These handlers are functions defined either as class methods or within functional components.
 
-> **Component** **Props** **in** **React**
->
-> We call props the initial values passed to a component.
->
-> We previously created a WelcomeMessage component
->
-> function WelcomeMessage() { return \<p\>Welcome!\</p\>
->
-> }
->
-> and we used it like this:
->
-> \<WelcomeMessage /\>
->
-> This component does not have any initial value. It does not have
-> props.
->
-> Props can be passed as attributes to the component in the JSX:
->
-> \<WelcomeMessage myprop={'somevalue'} /\>
->
-> and inside the component we receive the props as argument:
->
-> function WelcomeMessage(props) { return \<p\>Welcome!\</p\>
->
-> }
+* Binding Event Handlers: In class components, event handler methods often need to be bound to the component instance to ensure the correct this context. This can be done using the .bind() method in the constructor or by using arrow functions.
 
-28
+* Passing Arguments: To pass arguments to event handlers, you can use an arrow function or the .bind() method within the JSX. This ensures the handler receives the necessary parameters when the event occurs.
 
-> It's common to use object destructuring to get the props by name:
->
-> function WelcomeMessage({ myprop }) { return \<p\>Welcome!\</p\>
->
-> }
->
-> Now that we have the prop, we can use it inside the component, for
-> example we can print its value in the JSX:
->
-> function WelcomeMessage({ myprop }) { return \<p\>{myprop}\</p\>
->
-> }
->
-> Curly brackets here have various meanings. In the case of the function
-> argument, curly brackets are used as part of the object destructuring
-> syntax.
->
-> Then we use them to define the function code block, and finally in the
-> JSX to print the JavaScript value.
->
-> Passing props to components is a great way to pass values around in
-> your application.
->
-> A component either holds data (has state) or receives data through its
-> props.
->
-> We can also send functions as props, so a child component can call a
-> function in the parent component.
->
-> A special prop is called children . That contains the value of
-> anything that is passed between the opening and closing tags of the
-> component, for example:
+* Preventing Default Behavior: To prevent the default behavior of an event (like form submission), you can call event.preventDefault() within the event handler.
 
-29
+* Synthetic Events: React uses synthetic events, which are a cross-browser wrapper around the browser's native event system. This ensures consistent behavior across different browsers.
 
-<img src="./5xnps50w.png"
-style="width:4.58587in;height:0.20845in" />
+* State Updates: Event handlers often update the component’s state using this.setState() in class components or the setState function in functional components. This triggers a re-render, updating the UI in response to the user action.
 
-> In this case, inside WelcomeMessage we could access the value Here is
-> some message by using the
->
-> children prop:
->
-> function WelcomeMessage({ children }) { return \<p\>{children}\</p\>
->
-> }
+```bash
+import React, { Component } from 'react';
 
-30
+class ClickButton extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-> **Data** **flow** **in** **a** **React** **application**
->
-> In a React application, data typically flows from a parent component
-> to a child component, using props as we saw in the previous section:
->
-> \<WelcomeMessage myprop={'somevalue'} /\>
->
-> If you pass a function to the child component, you can however change
-> the state of the parent component from a child component:
->
-> const \[count, setCount\] = useState(0)
->
-> \<Counter setCount={setCount} /\>
->
-> Inside the Counter component we can now grab the setCount prop and
-> call it to update the count state
->
-> in the parent component, when something happens:
->
-> function Counter({ setCount }) { //...
->
-> setCount(1)
->
-> //... }
->
-> You need to know that there are more advanced ways to manage data,
-> which include the Context API and libraries like Redux, but those
-> introduce more
+  handleClick() {
+    this.setState({ count: this.state.count + 1 });
+  }
 
-31
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.handleClick}>Click Me</button>
+      </div>
+    );
+  }
+}
 
-> complexity and 90% of the times using those 2 ways I just explained
-> are the perfect solution.
+export default ClickButton;
 
-32
+`Functional Component Handling a Click Event`
+```
+```bash
+import React, { useState } from 'react';
 
-> **Handling** **user** **events** **in** **React**
->
-> React provides an easy way to manage events fired from DOM events like
-> clicks, form events and more.
->
-> Let's talk about click events, which are pretty simple to digest.
->
-> You can use the onClick attribute on any JSX element:
->
-> \<button onClick={(event) =\> {
->
-> /\* handle the event \*/ }}
->
-> \>
->
-> Click here \</button\>
->
-> When the element is clicked, the function passed to the onClick
-> attribute is fired.
->
-> You can define this function outside of the JSX:
->
-> <img src="./4lsln2zv.png"
-> style="width:4.58587in;height:0.20845in" />const handleClickEvent =
-> (event) =\> { /\* handle the event \*/
->
-> }
->
-> function App() {
->
-> return \<button onClick={handleClickEvent}\>Click he }
->
-> When the click event is fired on the button, React calls the event
-> handler function.
+const ClickButton = () => {
+  const [count, setCount] = useState(0);
 
-33
+  const handleClick = () => {
+    setCount(count + 1);
+  };
 
-> React supports a vast amount of types of events, like
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
+  );
+};
 
-||
-||
-||
+export default ClickButton;
 
-> onSubmit and many more.
+```
 
-34
+## 12. Understanding React js Props. What is "Props"?
 
-> **Lifecycle** **events** **in** **a** **React** **component**
->
-> So far we've seen how to manage state with the useState hook.
->
-> There's another hook I want to introduce in this book: useEffect .
->
-> The useEffect hook allows components to have access to the lifecycle
-> events of a component.
->
-> When you call the hook, you pass it a function. The function will be
-> run by React when the component is first rendered, and on every
-> subsequent re-render/update.
->
-> React first updates the DOM, then calls any function passed to
-> useEffect() .
->
-> All without blocking the UI rendering even on blocking code.
->
-> Here is an example:
+* 
+In React, "props" (short for properties) are a mechanism for passing data from a parent component to a child component. Props are used to customize and configure child components, enabling the creation of reusable and dynamic UI components. Here’s an overview of how props work:
 
-35
+**What Are Props?**
 
-<img src="./4ionaaaz.png"
-style="width:4.58587in;height:0.20845in" />
+* Data Passing: Props allow you to pass data from a parent component to a child component. This data can be of any type: strings, numbers, arrays, objects, functions, etc.
 
-> Since the useEffect() function is run on every subsequent
-> re-render/update of the component, we can tell React to skip it, for
-> performance purposes, by adding a second parameter which is an array
-> that contains a list of state variables to watch for. React will only
-> re-run the side effect if one of the items in this array changes.
->
-> <img src="./2wnftuz2.png"
-> style="width:4.58587in;height:0.20845in" />useEffect(() =\> {
->
-> console.log(\`Hi \${name} you clicked \${count} times }, \[name,
-> count\])
->
-> Similarly, you can tell React to only execute the side effect once (at
-> mount time), by passing an empty array:
->
-> useEffect(() =\> { console.log(\`Component mounted\`)
->
-> }, \[\])
+* Read-Only: Props are immutable, meaning they cannot be modified by the child component. This ensures a unidirectional data flow, promoting a clear and predictable structure in your application.
 
-36
+* Attributes in JSX: Props are passed to child components similarly to how attributes are added to HTML elements. They are specified within the JSX tags of the child component.
 
-> You migth find yourself using this option a lot.
->
-> useEffect() is great for adding logs, accessing 3rd party APIs and
-> much more.
+**How to Use Props**
+```bash
+<ChildComponent name="John" age={30} />
+```
 
-37
+**Accessing Props: In the child component, props can be accessed via this.props in class components or directly as a function parameter in functional components.**
 
-> **Where** **to** **go** **from** **here**
->
-> Mastering the topics explained in this book is a great step towards
-> your goal of learning React.
->
-> I want to give you some pointers now, because it's easy to get lost in
-> the sea of tutorials and courses about React.
->
-> What should you learn next?
->
-> [Learn more theory about the Virtual DOM,
-> writing](https://flaviocopes.com/react-declarative/) [declarative
-> code,](https://flaviocopes.com/react-declarative/) [unidirectional
-> data flow,](https://flaviocopes.com/react-unidirectional-data-flow/)
-> [immutability,](https://flaviocopes.com/react-immutability/)
-> [composition.](https://flaviocopes.com/react-composition/)
->
-> Start building some simple React applications. For [example build a
-> simple counter or a interact with
-> a](https://flaviocopes.com/react-example-githubusers/) [public
-> API.](https://flaviocopes.com/react-example-githubusers/)
->
-> Learn how to perform [conditional
-> rendering,](https://flaviocopes.com/react-conditional-rendering/) how
-> to [perform loops in JSX, how to use the React
-> Developer](https://flaviocopes.com/react-developer-tools/)
-> [Tools.](https://flaviocopes.com/react-developer-tools/)
->
-> Learn how to apply CSS in a React application, with [plain
-> CSS](https://flaviocopes.com/react-css/) or [Styled
-> Components.](https://flaviocopes.com/styled-components/)
->
-> Learn how to manage state using the [Context
-> API,](https://flaviocopes.com/react-context-api/) useContext and
-> [Redux.](https://flaviocopes.com/redux/)
->
-> Learn how to interact with
-> [forms.](https://flaviocopes.com/react-forms/)
->
-> Learn how to use [React
-> Router.](https://flaviocopes.com/react-router/)
->
-> Learn [how to test React
-> applications.](https://flaviocopes.com/react-testing-components/)
->
-> Learn an application framework built on top of React,
+```bash
+// Class Component
+class ChildComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>Name: {this.props.name}</p>
+        <p>Age: {this.props.age}</p>
+      </div>
+    );
+  }
+}
 
-<u>like</u> [<u>Gatsby</u>](https://flaviocopes.com/gatsby/) <u>or
-[Next.js.](https://flaviocopes.com/nextjs/)</u>
+// Functional Component
+const ChildComponent = (props) => {
+  return (
+    <div>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+};
 
-38
+```
 
-> Most of all, make sure you practice by building sample applications to
-> apply everything you learn.
+**Default Props: You can define default values for props in case they are not provided by the parent component.**
+```bash
+ChildComponent.defaultProps = {
+  name: 'Unknown',
+  age: 0
+};
 
-39
+```
+
+
+
+**Parent Component**
+
+```bash
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+const ParentComponent = () => {
+  return (
+    <div>
+      <ChildComponent name="John" age={30} />
+      <ChildComponent name="Jane" age={25} />
+    </div>
+  );
+};
+
+export default ParentComponent;
+```
+
+**Child Component**
+```bash
+import React from 'react';
+
+// Functional Component
+const ChildComponent = (props) => {
+  return (
+    <div>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+};
+
+// Setting default props
+ChildComponent.defaultProps = {
+  name: 'Unknown',
+  age: 0
+};
+
+export default ChildComponent;
+
+```
+### Thank You!
+
