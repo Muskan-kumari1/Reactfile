@@ -1,5 +1,4 @@
-<img src="./gv40k44j.png"
-style="width:8.26389in;height:11.69444in" />
+**React js**
 
 > **Table** **of** **Contents**
 >
