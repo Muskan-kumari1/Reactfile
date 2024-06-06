@@ -1,176 +1,62 @@
 **React js**
 
-> **Table** **of** **Contents**
->
-> Preface
+> **Table** **of** **Content**
 >
 > Introduction to React
 >
-> How much JavaScript you need to know to use React?
->
-> Why should you learn React?
+> Features of React
 >
 > How to install React
 >
 > React Components
+> 
+> What are the advantages of React
+> 
+> How React Works
 >
 > Introduction to JSX
->
-> Using JSX to compose UI
->
+> 
 > The difference between JSX and HTML
 >
 > Embedding JavaScript in JSX
 >
-> Managing state in React
->
-> Component Props in React
->
-> Data flow in a React application
+> Managing state in React 
 >
 > Handling user events in React
 >
-> Lifecycle events in a React component
+> What is State
 >
-> Where to go from here
 
 
 
-> **Preface**
->
-> The React Beginner's Handbook follows the 80/20 rule: learn in 20% of
-> the time the 80% of a topic.
->
-> I find this approach gives a well-rounded overview.
->
-> This book does not try to cover everything under the sun related to
-> React. It focuses on the core of the language, trying to simplify the
-> more complex topics.
->
-> I hope the contents of this book will help you achieve what you want:
-> **learn** **the** **basics** **of** **React**.
->
-> This book is written by Flavio. I **publish** **web** **development**
-> **tutorials** every day on my website
-> [flaviocopes.com.](https://flaviocopes.com/)
->
-> You can reach me on Twitter
-> [@flaviocopes](https://twitter.com/flaviocopes).
->
-> Enjoy!
 
-2
+1
 
 > **Introduction** **to** **React**
 >
-> The goal of this handbook is to provide a starter guide to learning
-> React.
+> React(also known as React.js or React js)is a free and open-source front-end Javascript library for building user interfaces based on components.
+> 
+> it is maintained by Meta(for mely Facebook)and a community of individual developers and companies.
 >
-> At the end of the book, you'll have a basic understanding of:
+> React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
+> 
+
+
+
+2
+
+> **Features of React**
 >
-> What is React and why it's so popular How to install React
->
-> The concepts of React: Components The concepts of React: State
->
-> The concepts of React: Props Handling user events in React Lifecycle
-> events in a React component
->
-> Those topics will be the base upon which you will work on in other
-> more advanced React courses.
->
-> This book is especially oriented at JavaScript programmers new to
-> React.
->
-> React is a JavaScript library that aims to simplify development of
-> visual interfaces.
->
-> Developed at Facebook and released to the world in 2013, it drives
-> some of the most widely used apps, powering Facebook and Instagram
-> among countless other applications.
->
-> Its primary goal is to make it easy to reason about an interface and
-> its state at any point in time, by dividing the UI into a collection
-> of components.
+> 
 
 3
 
-> You will find some initial difficulties learning React, but once it
-> "clicks", I guarantee it's going to be one of the best experiences you
-> will have, because React makes many things easier than ever, and its
-> ecosystem is filled with great libraries and tools.
->
-> React in itself has a very small API, and you basically need to
-> understand 4 concepts to get started:
->
-> Components JSX
->
-> State Props
->
-> We'll explore all of these in this book, and we'll leave the more
-> advanced concepts to other learning resources.
 
-4
 
-> **How** **much** **JavaScript** **you** **need** **to** **know**
-> **to** **use** **React?**
->
-> Before jumping straight into React, you should have a good
-> understanding of some core JavaScript concepts.
->
-> You don't have to be an expert, but I think you need a good overview
-> of:
->
-> [Variables](https://flaviocopes.com/javascript-variables/) [Arrow
-> functions](https://flaviocopes.com/javascript-arrow-functions/)
->
-> [Work with objects and arrays using Rest
-> and](https://flaviocopes.com/javascript-rest-spread/)
-> [Spread](https://flaviocopes.com/javascript-rest-spread/)
->
-> [Object and array
-> destructuring](https://flaviocopes.com/javascript-destructuring/)
-> [Template
-> literals](https://flaviocopes.com/javascript-template-literals/)
->
-> [Classes](https://flaviocopes.com/javascript-classes/)
-> [Callbacks](https://flaviocopes.com/javascript-callbacks/)
-> [Promises](https://flaviocopes.com/javascript-promises/)
-> [Async/Await](https://flaviocopes.com/javascript-async-await/) [ES
-> Modules](https://flaviocopes.com/es-modules/)
->
-> If those terms sounds unfamiliar, I provided you some links to find
-> out more about those subjects.
 
-5
 
-> **Why** **should** **you** **learn** **React?**
->
-> I highly recommend any Web developer to have at least a basic
-> understanding of React.
->
-> That's because of a few reasons.
->
-> 1\. React is very popular. As a developer, it's quite likely that
-> you're going to work on a React project in the future. Perhaps an
-> existing project, or maybe your team will want you to work on a brand
-> new app based on React.
->
-> 2\. A lot of tooling today is built using React at the core. Popular
-> frameworks and tools like Next.js, Gatsby and many others use React
-> under the hood.
->
-> 3\. As a frontend engineer, React is probably going to come up in a
-> job interview.
->
-> Those are all good reasons, but one of the reasons I want you to learn
-> React is that it's great.
->
-> It promotes several good development practices, including code
-> reusability and components-driven development. It is fast, it is
-> lightweight and the way it makes you think about the data flow in your
-> application perfectly suits a lot of common scenarios.
 
-6
+
 
 > **How** **to** **install** **React**
 >
@@ -207,19 +93,18 @@
 > an
 
 7
+> **Advantages of React**
+> 
+The advantages of React JS are :
 
-<img src="./lmucztn5.png"
-style="width:4.53376in;height:2.98082in" /><img src="./skblddaa.png"
-style="width:4.53376in;height:2.99124in" />
-
-> outdated version on your system, and every time you run it, you're
-> getting the latest and greatest code available.
->
-> Let's start then:
->
-> npx create-react-app todolist
->
-> This is when it finished running:
+> It is composable.
+> It is declarative.
+> Write once, and learn anywhere.
+> It is simple.
+> SEO friendly.
+> Fast, efficient, and easy to learn.
+> It guarantees stable code.
+> It is backed by a strong community.
 
 8
 
